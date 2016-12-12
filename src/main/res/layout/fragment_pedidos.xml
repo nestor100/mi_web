@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.PedidosFragment">
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:text="@string/pedidos"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/layoutTabla"
+        android:gravity="center"
+        android:layout_below="@id/label"
+        android:layout_centerInParent="true">
+
+        <ScrollView
+            android:id="@+id/scrollvertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_weight="1">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollhorizontal"
+                android:scrollbars="horizontal"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TableLayout
+                        android:id="@+id/tabla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total :"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tvtotalgral"
+                android:textSize="30dp"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Finalizar"
+                android:id="@+id/btnFinlaizar"
+                android:layout_margin="5dp"
+
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_weight="0.50" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="Atras"
+                android:id="@+id/btnAtras"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

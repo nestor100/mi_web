@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".ui.ProductoFragment">
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:text="@string/selec_producto"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+		
+		<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_17844"/>
+
+    <Spinner
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:id="@+id/spinProducto"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:textColor="@color/textColorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio :"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/tvPrecio"
+            android:layout_marginRight="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:textColor="@color/textColorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock :"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tvStock"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"/>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+        <TextView
+            android:textColor="@color/textColorPrimary"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad :"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"/>
+        <NumberPicker
+            android:id="@+id/numberPicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+                 />
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:textColor="@color/textColorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total :"
+            android:layout_marginRight="20dp"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tvtotal"
+            android:textSize="30dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_aceptar"
+        android:id="@+id/btnProducto1"
+        android:background="@color/navigationBarColor"
+        android:layout_marginTop="80dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

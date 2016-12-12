@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">App Pedidos</string>
+    <string name="action_settings">Settings</string>
+    <string name="selec_cliente">Seleccione el cliente</string>
+    <string name="selec_producto">Seleccione el Producto</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="precio">Precio</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="total">Total</string>
+    <string name="boton_aceptar">ACEPTAR</string>
+    <string name="boton_pedido">Realizar Pedido</string>
+
+
+    <!--matrial  -->
+    <string name="action_search">Buscar</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Cerrar</string>
+    <string name="nav_item_home">Clientes</string>
+    <string name="nav_item_friends">Productos</string>
+    <string name="nav_item_notifications">Pedidos</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="title_messages">Pedidos</string>
+    <string name="title_friends">Productos</string>
+    <string name="title_home">Clientes</string>
+
+    <string-array name="cabecera_tabla">
+        <item>Item</item>
+        <item>Producto</item>
+        <item>Precio</item>
+        <item>Cantidad</item>
+        <item>Total</item>
+    </string-array>
+
+
+
+</resources>
